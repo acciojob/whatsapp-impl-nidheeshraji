@@ -32,8 +32,8 @@ public class WhatsappController {
         {
             throw new Exception("User already exists");
         }
-        else
-            return "SUCCESS";
+
+        return "SUCCESS";
     }
 
     @PostMapping("/add-group")

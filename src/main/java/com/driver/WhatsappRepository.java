@@ -24,11 +24,12 @@ public class WhatsappRepository {
         this.senderMap = new HashMap<Message, User>();
         this.adminMap = new HashMap<Group, User>();
         this.userMobile = new HashSet<>();
-        this.customGroupCount = 0;
+        this.customGroupCount = 1;
         this.messageId = 0;
     }
 
     public String createUser(String name, String mobile) {
+        User user=new User(name,mobile);
         if(userMobile.contains(mobile))
             return "null";
         else
@@ -48,7 +49,7 @@ public class WhatsappRepository {
             name=users.get(1).getName();
         }
         else
-            name="Group_count"+customGroupCount;
+            name="Group "+customGroupCount;
 
         Group group=new Group(name,users.size());
         groupUserMap.put(group,users);
