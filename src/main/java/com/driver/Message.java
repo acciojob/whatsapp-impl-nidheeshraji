@@ -13,6 +13,9 @@ public class Message {
         this.timestamp = timestamp;
     }
 
+    public Message() {
+    }
+
     public int getId() {
         return id;
     }
