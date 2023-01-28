@@ -9,8 +9,6 @@ public class Group {
         this.numberOfParticipants = numberOfParticipants;
     }
 
-    public Group() {
-    }
 
     public String getName() {
         return name;

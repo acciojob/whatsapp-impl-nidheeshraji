@@ -12,8 +12,7 @@ public class Message {
         this.id=id;
     }
 
-    public Message() {
-    }
+
 
     public int getId() {
         return id;
