@@ -28,14 +28,14 @@ public class WhatsappRepository {
         this.messageId = 0;
     }
 
-    public String createUser(String name, String mobile) {
-        User user=new User(name,mobile);
-        if(userMobile.contains(mobile))
+    public String createUser(User user) {
+
+        if(userMobile.contains(user.getName()))
             return "null";
         else
         {
 
-            userMobile.add(mobile);
+            userMobile.add(user.getName());
 
         }
         return "successfully Added";

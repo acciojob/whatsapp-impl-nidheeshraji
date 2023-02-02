@@ -11,8 +11,8 @@ public class WhatsappService {
     WhatsappRepository whatsappRepository=new WhatsappRepository();
 
 
-    public String createUser(String name, String mobile) {
-        return whatsappRepository.createUser(name,mobile);
+    public String createUser(User user) {
+        return whatsappRepository.createUser(user);
 
 
     }
